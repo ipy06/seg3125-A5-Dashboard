@@ -1,0 +1,76 @@
+/* Light Theme (Cool-Tech) */
+.theme-light {
+    --bg-color: #f4f6f9;
+    --card-bg: #ffffff;
+    --text-primary: #1c1f26;
+    --text-secondary: #6c757d;
+    --text-chart: #343a40;
+    --border-color: #d1d5db;
+    --primary-accent: #4e91f9;
+    --secondary-accent: #8e44ad;
+    --chart-bar-bg: rgba(78, 145, 249, 0.7);
+    --chart-bar-border: #4e91f9;
+    --chart-line-color: #8e44ad;
+    --chart-line-bg: rgba(142, 68, 173, 0.1);
+}
+
+/* Dark Theme (Cool-Tech Night) */
+.theme-dark {
+    --bg-color: #0f1117;
+    --card-bg: #1a1d23;
+    --text-primary: #f8f9fa;
+    --text-secondary: #adb5bd;
+    --text-chart: #ced4da;
+    --border-color: #2a2e35;
+    --primary-accent: #4e91f9;
+    --secondary-accent: #bd93f9;
+    --chart-bar-bg: rgba(78, 145, 249, 0.7);
+    --chart-bar-border: #4e91f9;
+    --chart-line-color: #bd93f9;
+    --chart-line-bg: rgba(189, 147, 249, 0.1);
+}
+
+/* Apply theme colors */
+.themed-container {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.themed-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+.themed-text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+/* Hover Effects */
+.theme-light .btn:hover {
+    background-color: var(--secondary-accent) !important;
+    border-color: var(--secondary-accent) !important;
+    color: #ffffff !important;
+}
+
+.theme-dark .btn:hover {
+    background-color: var(--secondary-accent) !important;
+    border-color: var(--secondary-accent) !important;
+    color: #0f1117 !important;
+}
+
+.theme-light .form-select:hover {
+    border-color: var(--secondary-accent);
+    box-shadow: 0 0 0 0.2rem rgba(142, 68, 173, 0.25);
+}
+
+.theme-dark .form-select:hover {
+    border-color: var(--secondary-accent);
+    box-shadow: 0 0 0 0.2rem rgba(189, 147, 249, 0.25);
+}
+
+.themed-card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-in-out;
+}
